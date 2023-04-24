@@ -1,0 +1,89 @@
+/* NAV-LAYOUT */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.5em;
+}
+
+#open-nav-content {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-container {
+    display: flex;
+    gap: 2em;
+}
+
+
+
+/* NAV-LAYOUT */
+
+/* modal */
+
+#nav-modal {
+    margin-left: auto;
+    height: 100%;
+    width: 70%;
+    padding: 1.5em;
+    background-color: white;
+    border: none;
+    position: fixed;
+}
+
+.modal-nav-content {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+#close-nav-content {
+    text-align: end;
+    cursor: pointer;
+}
+
+#close-nav-content img{
+    height: 40px;
+}
+
+/* modal */
+
+
+@media (max-width:538px) {
+
+    #open-nav-content {
+        margin-left: auto;
+        display: block;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+}
+
+/* TYPO */
+
+.nav-container li, a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+    color: hsl(234, 9%, 55%);
+}
+
+.nav-container a:hover,
+.modal-nav-content a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.modal-nav-content a {
+    color: hsl(240, 100%, 5%);
+    font-size: 1.3rem;
+}
+
+.modal-nav-content a:focus {
+    outline: none;
+}
